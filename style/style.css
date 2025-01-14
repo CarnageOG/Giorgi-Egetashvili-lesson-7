@@ -11,7 +11,7 @@
   display: inline-block;
   position: absolute;
   animation-name: tiger-move ;
-  animation-direction: alternate;
+  animation-direction: alternate-reverse;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
@@ -20,24 +20,102 @@
   display: inline-block;
   position: absolute;
   animation-name: dragon-move;
-  animation-direction: alternate;
+  animation-direction: alternate-reverse;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 @keyframes dragon-move {
-  0% {
-      left: -512px;
+    0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: 0;
+    left: calc(100% - 512px);
+  }
+   40% {
+    top: calc(100% - 512px);
+    left: calc(100% - 512px);
+  }
+  60% {
+    top: calc(100% - 512px);
+    left: calc(100% - 512px);
+  }
+  80% {
+    top: calc(100% - 512px);
+    left: 0;
   }
   100% {
-        left: 50%;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes tiger-move {
+    0% {
+    top: 0;
+    right: 0;
+  }
+  20% {
+    top: 0;
+    right: calc(100% - 512px);
+  }
+   40% {
+    top: calc(100% - 512px);
+    right: calc(100% - 512px);
+  }
+  60% {
+    top: calc(100% - 512px);
+    right: calc(100% - 512px);
+  }
+  80% {
+    top: calc(100% - 512px);
+    right: 0;
+  }
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+
+/*@keyframes dragon-move { (ჰორიზონტალი გადაადგილებისთვის) 
+  0% {
+    left: 0px;
+  }
+  20%{
+    left: 20%;
+  }
+  40%{
+    left: 40%;
+  }
+  60% {
+    left: 60%;
+  }
+  80%{
+    left: 80%;
+  }
+  100% {
+    left: 0;
   }
 }
 
 @keyframes tiger-move {
   0% {
-      right: -512px;
+    right: 0px;
+  }
+  20%{
+    right: 20%;
+  }
+  40%{
+    right: 40%;
+  }
+  60% {
+    right: 60%;
+  }
+  80%{
+    right: 80%;
   }
   100% {
-      right: 50%;
+    right: 0;
   }
-}
+}*/

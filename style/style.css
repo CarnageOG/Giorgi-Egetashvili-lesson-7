@@ -9,12 +9,35 @@
 .tiger{
   background-color: #DD571C;
   display: inline-block;
+  position: absolute;
+  animation-name: tiger-move ;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
-@keyframes img {
-  from{
-
+.dragon{
+  background-color: #2832C2;
+  display: inline-block;
+  position: absolute;
+  animation-name: dragon-move;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes dragon-move {
+  0% {
+      left: -512px;
   }
-  to{
+  100% {
+        left: 50%;
+  }
+}
 
+@keyframes tiger-move {
+  0% {
+      right: -512px;
+  }
+  100% {
+      right: 50%;
   }
 }

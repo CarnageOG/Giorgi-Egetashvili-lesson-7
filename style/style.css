@@ -1,3 +1,20 @@
 *{
   margin: 0;
   padding: 0;
+}
+.dragon{
+  background-color: #2832C2;
+  display: inline-block;
+}
+.tiger{
+  background-color: #DD571C;
+  display: inline-block;
+}
+@keyframes img {
+  from{
+
+  }
+  to{
+
+  }
+}
